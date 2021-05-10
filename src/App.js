@@ -25,7 +25,7 @@ function App() {
   }, [word]);
 
   /**
-   * Функция для проверки задания
+   * check - Функция для проверки словаря
    */
   function check() {
     let symbols = word.split("");
@@ -107,28 +107,31 @@ function App() {
   }
 
   /**
-   * Функция для отображения уведомления о вводе верной последовательности символов
+   * showSuccess - Функция для отображения уведомления о вводе верной последовательности символов
    */
   function showSuccess() {
-    toast.current.show({ severity: "success", summary: "Верно", life: 5000 });
+    toast.current.show({ severity: "success", summary: "Верно",detail:`Данное слово ${word}  принадлежит грамматике` });
   }
 
   /**
-   * Функция для отображения уведомления о вводе неверной последовательности символов
+   * showError - Функция для отображения уведомления о вводе неверной последовательности символов
    */
   function showError() {
-    toast.current.show({ severity: "error", summary: "Неверно", life: 5000 });
+    toast.current.show({ severity: "error", summary: "Неверно",detail: `Данное слово ${word} не принадлежит грамматике` });
   }
 
   /**
-   * Символ '*' - это признак конца цепочки. Его ввод в конце последовательности обязателен обязателен.
+   * Символ '*' - это признак конца цепочки.
+   * return JSX разметка
    */
   return (
     <div className="App">
-      <Card title="Лексический анализатор" className="App-card">
+      <div title="Лексический анализатор" className="App-card">
+        <h1>Лексический анализатор</h1>
+        <h2>Курсовая работа</h2>
         <img src={photo} alt="Схема задания" />
         <div>
-          <label>Введите цепочку символов a,b,c, *</label>
+          <label>Введите цепочку символов a,b, *(конечная цепочка символов)</label>
 
           <div className="p-fluid">
             <div className="p-inputgroup">
@@ -139,23 +142,25 @@ function App() {
                 onKeyPress={(e) => {
                   e.code === "Enter" && !disabledButtons && check();
                 }}
+                style={{width: '350px'}}
               />
               <Button
-                icon="pi pi-check"
+                className='p-button-info'
                 onClick={check}
                 disabled={disabledButtons}
+                label='Проверить'
               />
               <Button
                 className="p-button-danger"
-                icon="pi pi-trash"
                 onClick={() => setWord("")}
                 disabled={disabledButtons}
+                label='Очистить'
               />
             </div>
           </div>
         </div>
-      </Card>
-      <Toast ref={toast} />
+      </div>
+      <Toast ref={toast} position='bottom-right'/>
     </div>
   );
 }
