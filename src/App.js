@@ -9,7 +9,7 @@ import "primereact/resources/themes/bootstrap4-light-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
-import photo from "./photo.jpg";
+import photo from "./SCHEMA.PNG";
 import "./App.css";
 
 function App() {
@@ -40,15 +40,11 @@ function App() {
         case "H":
           switch (symbols[i]) {
             case "a":
-              location = "B";
+              location = "C";
               break;
 
             case "b":
-              location = "A";
-              break;
-
-            case "c":
-              location = "C";
+              location = "B";
               break;
 
             default:
