@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Lexical_Analyzer/static/css/main.031afe97.chunk.css",
+    "main.js": "/Lexical_Analyzer/static/js/main.7230e022.chunk.js",
+    "main.js.map": "/Lexical_Analyzer/static/js/main.7230e022.chunk.js.map",
+    "runtime-main.js": "/Lexical_Analyzer/static/js/runtime-main.e1707a39.js",
+    "runtime-main.js.map": "/Lexical_Analyzer/static/js/runtime-main.e1707a39.js.map",
+    "static/css/2.0b10fcc7.chunk.css": "/Lexical_Analyzer/static/css/2.0b10fcc7.chunk.css",
+    "static/js/2.78cbed0a.chunk.js": "/Lexical_Analyzer/static/js/2.78cbed0a.chunk.js",
+    "static/js/2.78cbed0a.chunk.js.map": "/Lexical_Analyzer/static/js/2.78cbed0a.chunk.js.map",
+    "static/js/3.de6686a4.chunk.js": "/Lexical_Analyzer/static/js/3.de6686a4.chunk.js",
+    "static/js/3.de6686a4.chunk.js.map": "/Lexical_Analyzer/static/js/3.de6686a4.chunk.js.map",
+    "index.html": "/Lexical_Analyzer/index.html",
+    "static/css/2.0b10fcc7.chunk.css.map": "/Lexical_Analyzer/static/css/2.0b10fcc7.chunk.css.map",
+    "static/css/main.031afe97.chunk.css.map": "/Lexical_Analyzer/static/css/main.031afe97.chunk.css.map",
+    "static/js/2.78cbed0a.chunk.js.LICENSE.txt": "/Lexical_Analyzer/static/js/2.78cbed0a.chunk.js.LICENSE.txt",
+    "static/media/SCHEMA.9c131791.PNG": "/Lexical_Analyzer/static/media/SCHEMA.9c131791.PNG",
+    "static/media/primereact.min.css": "/Lexical_Analyzer/static/media/color.6441e63a.png",
+    "static/media/primeicons.css": "/Lexical_Analyzer/static/media/primeicons.e61f3495.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1707a39.js",
+    "static/css/2.0b10fcc7.chunk.css",
+    "static/js/2.78cbed0a.chunk.js",
+    "static/css/main.031afe97.chunk.css",
+    "static/js/main.7230e022.chunk.js"
+  ]
+}
