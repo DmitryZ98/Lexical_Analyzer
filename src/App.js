@@ -53,9 +53,11 @@ function App() {
           }
           break;
 
-        case "A":
+        case "C":
           switch (symbols[i]) {
             case "a":
+              break;
+            case "b":
               location = "B";
               break;
 
@@ -68,14 +70,6 @@ function App() {
         case "B":
           switch (symbols[i]) {
             case "a":
-              location = "C";
-              break;
-
-            case "b":
-              location = "I";
-              break;
-
-            case "c":
               location = "A";
               break;
 
@@ -85,7 +79,7 @@ function App() {
           }
           break;
 
-        case "C":
+        case "A":
           switch (symbols[i]) {
             case "b":
               break;
@@ -94,7 +88,6 @@ function App() {
               location = "I";
               if (i === symbols.length - 1 && symbols[i] === "*") showSuccess();
               break;
-
             default:
               showError();
               return;
